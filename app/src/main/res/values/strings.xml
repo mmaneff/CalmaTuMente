@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calma Tu Mente</string>
+    <string name="app_header_name">Calma Tu Mente</string>
+    <string name="web_link">www.adrianjaime.net</string>
+    <string name="doctor_nombre">DR. ADRIÁN JAIME</string>
+    <string name="meditacion_1">Minuto de Meditacion Mindfulness</string>
+    <string name="meditacion_2">Meditación Bienestar Mente - Cuerpo</string>
+    <string name="meditacion_3">Meditación Libera tu Estres</string>
+    <string name="meditacion_4">Meditación Insomnio - Relaja</string>
+</resources>

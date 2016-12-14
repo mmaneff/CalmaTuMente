@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1" >
+
+    <LinearLayout
+        android:id="@+id/layoutVideo"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.adrianjaime.calmatumente.FullScreenVideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/vidInicio" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/btnInicio"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:src="@drawable/ic_menu_home"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_primary" />
+
+        <ImageButton
+            android:id="@+id/btnMeditacion"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/btnInicio"
+            android:gravity="center"
+            android:src="@drawable/ic_menu_meditation"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_primary" />
+
+        <ImageButton
+            android:id="@+id/btnConfiguracion"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/btnMeditacion"
+            android:gravity="center"
+            android:src="@drawable/ic_menu_settings"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_primary" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutLogo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/layoutButton"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tvCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/circularProgressbar"
+            android:textColor="#fff"
+            android:textSize="50dp"
+            android:text="3" />
+
+        <ProgressBar
+            android:id="@+id/circularProgressbar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:indeterminate="false"
+            android:progress="50"
+            android:max="100"
+            android:secondaryProgress="80"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+
+        <TextView
+            android:id="@+id/tvEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/circularProgressbar"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:text="Preparate" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutLogo"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_med_play"
+                android:background="@color/btnTransparent" />
+
+            <ImageButton
+                android:id="@+id/btnStop"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:src="@drawable/ic_med_stop"
+                android:background="@color/btnTransparent"
+                android:layout_below="@+id/btnPlay"
+                android:onClick="onStopClick" />
+
+            <ImageButton
+                android:id="@+id/btnEscena"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_med_panorama"
+                android:background="@color/btnTransparent"
+                android:layout_below="@+id/btnPlay"
+                android:onClick="onEscenaClick" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
