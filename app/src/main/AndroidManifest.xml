@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.adrianjaime.calmatumente"
-    android:revisionCode="1"
-    android:versionName="1.0"
     android:installLocation="auto">
-
-    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25"></uses-sdk>
-
+	
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
 
@@ -23,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".HomeActivity"
+            android:name=".MainActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -32,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".InicioActivity"
             android:theme="@style/AppTheme"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"></activity>
@@ -42,7 +38,17 @@
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"></activity>
         <activity
+            android:name=".AlarmaActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".MinMeditacionActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TipoMeditacionActivity"
             android:theme="@style/AppTheme"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"></activity>

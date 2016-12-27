@@ -31,7 +31,7 @@
             android:fromDegrees="270"
             android:pivotX="50%"
             android:pivotY="50%"
-            android:toDegrees="270" >
+            android:toDegrees="360" >
             <shape
                 android:innerRadiusRatio="3"
                 android:shape="ring"
@@ -39,15 +39,15 @@
                 android:thicknessRatio="14.0">
 
                 <rotate
-                    android:fromDegrees="0"
+                    android:fromDegrees="270"
                     android:toDegrees="360"
                     android:pivotX="50%"
                     android:pivotY="50%" />
 
                 <gradient
-                    android:startColor="#CC9322"
-                    android:endColor="#CC9322"
-                    android:centerColor="#CC9322"
+                    android:startColor="#EB841D"
+                    android:endColor="#EB841D"
+                    android:centerColor="#EB841D"
                     android:type="sweep" />
             </shape>
         </rotate>

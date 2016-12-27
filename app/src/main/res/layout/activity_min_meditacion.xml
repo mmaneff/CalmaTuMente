@@ -81,22 +81,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:textColor="#fff"
-            android:textSize="74dp"
+            android:layout_marginTop="24dp"
+            android:textColor="#EB841D"
+            android:textSize="70dp"
             android:textStyle="bold"
             android:text="3" />
 
         <ProgressBar
             android:id="@+id/circularProgressbar"
-            android:layout_width="220dp"
-            android:layout_height="220dp"
-            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             style="?android:attr/progressBarStyleHorizontal"
             android:indeterminate="false"
-            android:progress="50"
-            android:max="100"
-            android:secondaryProgress="80"
+            android:progress="0"
+            android:secondaryProgress="100"
+            android:layout_gravity="center"
             android:progressDrawable="@drawable/circular_progress_bar" />
 
         <TextView
@@ -104,8 +103,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="30dp"
-            android:textColor="#fff"
+            android:layout_marginBottom="24dp"
+            android:textColor="#EB841D"
             android:textSize="24dp"
             android:textStyle="bold"
             android:text="Preparate" />

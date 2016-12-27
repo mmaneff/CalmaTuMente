@@ -5,9 +5,8 @@ import android.util.AttributeSet;
 import android.widget.VideoView;
 
 /**
- * Created by Matute on 27/11/2016.
+ * Created by Matute on 26/12/2016.
  */
-
 public class FullScreenVideoView extends VideoView {
     public FullScreenVideoView(Context context) {
         super(context);
