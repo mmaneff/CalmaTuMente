@@ -58,4 +58,4 @@ $ vi settings.gradle
     include ':YourApp', ':LicenseVerificationLibrary'
 Click "Sync Project with Gradle Files" and "Rebuild Project" at Android Studio Menu.
 
-Run YourApp by Android Studio Menu > Run > Run YourApp.
+Run YourApp by Android Studio Menu > Run > Run YourApp."# CalmaTuMente" 

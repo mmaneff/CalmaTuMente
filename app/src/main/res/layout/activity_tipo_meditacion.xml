@@ -53,6 +53,7 @@
                     android:src="@drawable/ic_menu_home"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true"
+                    android:onClick="onInicioClick"
                     android:background="@drawable/btn_primary" />
 
                 <ImageButton
@@ -66,6 +67,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
+                    android:onClick="onMeditacionClick"
                     android:background="@drawable/btn_primary" />
 
                 <ImageButton
@@ -77,6 +79,7 @@
                     android:src="@drawable/ic_menu_settings"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true"
+                    android:onClick="onConfiguracionClick"
                     android:background="@drawable/btn_primary" />
 
             </LinearLayout>
